@@ -5,6 +5,9 @@ $( document ).ready(function() {
 		let imgcontainer = $("#imgcontainer").detach();
 	});//end of btn click event		
 ///////////////////////CONTAINER&STRING&DOM
+
+	$("#id").click((event) => {});//end of xmen btn click event
+
 		const outputContainer = $("#output");
 
 		const writeToDOM = function (heroArray) {
@@ -50,12 +53,14 @@ $( document ).ready(function() {
 		};//end of loadTeams
 		
 
+Promise.all([loadCharacters, loadGenders, loadTeams]).then(values => {
+	console.log(values);
+});
 
 
 
 
-
-console.log();
+// console.log();
 
 
 });//end of document
