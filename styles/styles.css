@@ -11,6 +11,21 @@ body {
 	color: white;
 }
 
+.charText {
+	color: #e23636;
+}
+
+.nameBanner {
+	background-color: #f78f3f;
+}
+
+.charImg {
+	border-radius: 50%;
+}
+
+/*classList method to pop in the correct border color*/
+
+
 /*#imgcontainer {
 	display: flex;
 	align-items: center;

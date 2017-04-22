@@ -3,6 +3,7 @@ $( document ).ready(function() {
 	$(".btn").click((event) => {
 
 		let imgcontainer = $("#imgcontainer").detach();
+	});//end of btn click event		
 ///////////////////////CONTAINER&STRING&DOM
 		const outputContainer = $("#output");
 
@@ -11,9 +12,9 @@ $( document ).ready(function() {
 		  	for (let i = 0; i < characters.length; i++) {
 			    domString += `<div class="hero row">`;
 			    domString += `<div class="col-sm-4">`;
-			    domString += `<p>${characters[i].name}</p>`;
-			    domString += `<img src="${characters[i].image}">`;
-			    domString += `<p>${characters[i].description}</p>`;
+			    domString += `<p class="nameBanner">${characters[i].name}</p>`;
+			    domString += `<img class="charImg" src="${characters[i].image}">`;
+			    domString += `<p class="charText">${characters[i].description}</p>`;
 			    domString += `</div>`;
 			    domString += `<div class="col-sm-8 overflow-row">`;
 		    domString += `</div>`;
@@ -51,7 +52,7 @@ $( document ).ready(function() {
 
 
 
-	});//end of btn click event
+
 
 
 console.log();
